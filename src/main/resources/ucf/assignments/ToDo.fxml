@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="669.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucf.assignments.ToDoListController">
+   <children>
+      <Label fx:id="toDoList" alignment="TOP_CENTER" layoutX="281.0" layoutY="27.0" text="To-Do List" textAlignment="CENTER" underline="true">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="helpButton" layoutX="2.0" layoutY="27.0" mnemonicParsing="false" onAction="#helpWindow" text="Help" />
+      <Button fx:id="addButton" layoutX="59.0" layoutY="2.0" mnemonicParsing="false" onAction="#addItem" prefHeight="25.0" prefWidth="60.0" text="Add" />
+      <Button fx:id="editButton" layoutX="63.0" layoutY="373.0" mnemonicParsing="false" onAction="#editItem" prefHeight="25.0" prefWidth="60.0" text="Edit" />
+      <TextField fx:id="dateText" layoutX="125.0" layoutY="2.0" prefHeight="25.0" prefWidth="100.0" promptText="YYYY-MM-DD" />
+      <TextField fx:id="descriptionText" layoutX="229.0" layoutY="2.0" prefHeight="25.0" prefWidth="435.0" promptText="Description" />
+      <TextField fx:id="itemNumberText" layoutX="216.0" layoutY="373.0" prefHeight="25.0" prefWidth="93.0" promptText="Item Number" />
+      <Button fx:id="deleteButton" layoutX="3.0" layoutY="373.0" mnemonicParsing="false" onAction="#deleteItem" prefHeight="25.0" prefWidth="60.0" text="Delete" />
+      <Button fx:id="showCompleteButton" layoutX="439.0" layoutY="373.0" mnemonicParsing="false" onAction="#showComplete" prefHeight="25.0" prefWidth="110.0" text="Show Completed" />
+      <Button fx:id="showIncompleteButton" layoutX="549.0" layoutY="373.0" mnemonicParsing="false" onAction="#showIncomplete" text="Show Incompleted" />
+      <ListView fx:id="listHolder" layoutY="60.0" prefHeight="311.0" prefWidth="669.0" />
+      <Button fx:id="markCompleteButton" layoutX="123.0" layoutY="373.0" mnemonicParsing="false" onAction="#completeItem" prefHeight="25.0" prefWidth="93.0" text="Completed" />
+      <Button fx:id="showExistingButton" layoutX="329.0" layoutY="373.0" mnemonicParsing="false" onAction="#showExisting" prefHeight="25.0" prefWidth="110.0" text="Show Existing" />
+      <Button fx:id="loadButton" layoutX="43.0" layoutY="27.0" mnemonicParsing="false" onAction="#loadList" text="Load" />
+      <Button fx:id="clearButton" layoutX="84.0" layoutY="27.0" mnemonicParsing="false" onAction="#clearList" text="Clear" />
+      <Button fx:id="saveButton" layoutX="-2.0" layoutY="2.0" mnemonicParsing="false" onAction="#saveListAsFile" prefHeight="25.0" prefWidth="60.0" text="Save" />
+   </children>
+</AnchorPane>

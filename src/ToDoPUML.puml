@@ -1,0 +1,37 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+abstract class ToDoClass {
+    correctText
+    completedList
+    incompletedList
+}
+
+abstract class ToDoListApplication {
+    start
+    main
+}
+
+abstract class ToDoListController {
+    addItem
+    deleteItem
+    clearList
+    editItem
+    completeItem
+    helpWindow
+    showComplete
+    showIncomplete
+    showExisting
+    saveListAsFile
+    loadList
+}
+
+abstract class Help.fxml
+abstract class ToDo.fxml
+
+ToDoListController <-- ToDo.fxml
+ToDoListController <-- Help.fxml
+ToDoListController <-- ToDoClass
+ToDoListApplication <-- ToDoListController
+
+@enduml

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="354.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucf.assignments.ToDoListController">
+   <children>
+      <TextArea editable="false" prefHeight="357.0" prefWidth="400.0" text="- To add an item, enter the date the item should be completed in the &#10;box labled YYYY-MM-DD. Then enter the description for the item, &#10;then hit the Add button&#10;- To remove an item, enter the item number that you will find to the &#10;left of the date of said item into the item number textfield. Once you do &#10;that, hit the Delete button.&#10;- To edit an item, enter the item number you wish to edit, then in the&#10; same boxes you used to type a new item, enter the desired changes, &#10;then hit the Edit button.&#10;- To mark an item as completed or incompleted, type in the item&#10; number, then click the Completed button. Keep in mind, each new&#10; item is marked incompleted, as shown with an &quot;I&quot; to the right of the&#10; item. Once you mark it as complete, the &quot;I&quot; will turn into a &quot;C&quot;, &#10;standing for completed.&#10;- To show completed or incompleted items, hit the &quot;Show Completed&quot;&#10; or &quot;Show Incompleted&quot; buttons.&#10;- To show all items, hit the &quot;Show Existing&quot; button&#10;- To save your list, hit the Save button.&#10;- To remove all the items in your list, hit Clear.&#10;- To load a previously existing list, hit Load" />
+   </children>
+</AnchorPane>
